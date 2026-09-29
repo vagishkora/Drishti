@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: drishti-api
+    env: node
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: FRONTEND_URL
+        value: "https://drishti-one.vercel.app"
+      - key: NODE_ENV
+        value: "production"

@@ -139,7 +139,7 @@ Drishti features an administrative SOC dashboard providing real-time visibility 
 - [System Architecture Specification](docs/architecture.md)
 
 ---
-
+<!--
 ## 🗺️ Active Development & Security Roadmap
 
 Drishti follows an iterative security engineering lifecycle:
@@ -152,7 +152,7 @@ Drishti follows an iterative security engineering lifecycle:
 - [ ] **Phase 6 (In Progress): Decentralized Media Delivery** — Cloudflare R2 / AWS S3 presigned upload URLs with client-side chunking and zero-trust bucket policies.
 - [ ] **Phase 7 (Upcoming): FIDO2 / WebAuthn Hardware Tokens** — YubiKey and platform biometric authenticator support (Passkeys).
 - [ ] **Phase 8 (Upcoming): Automated Security CI/CD** — GitHub Actions pipeline running `verify_all_phases.js` and automated Semgrep / OWASP ZAP scans on PRs.
-
+-->
 ---
 
 ## 📜 License

@@ -1,7 +1,10 @@
 # 🔮 Drishti (दृष्टि) — Cyber-Hardened Creator Platform
 
-> **Status:** `v0.9.0-beta` | **Security Posture:** Zero-Trust Architecture | **Database:** Neon Serverless PostgreSQL
+> ⚠️ **NOTICE: ACTIVE DEVELOPMENT & PUBLIC BETA (`v0.9.0-beta`)**
+> 
+> Drishti is currently under active engineering and continuous security hardening. Core cryptographic primitives, Zero-Trust controls, and Neon database engines are operational, with ongoing development targeting media CDN pipeline enhancements and hardware token support.
 
+[![Status: Active Development](https://img.shields.io/badge/Status-Active%20Development%20(Beta)-ff9800.svg)](#development-roadmap)
 [![Security: Zero-Trust](https://img.shields.io/badge/Security-Zero--Trust-10b981.svg)](#security-architecture)
 [![Cryptography: NIST P-256 ECDH + AES-256-GCM](https://img.shields.io/badge/Crypto-P--256%20ECDH%20%2B%20AES--GCM-6366f1.svg)](#cryptographic-engine)
 [![Audit: SHA-256 Chained Ledger](https://img.shields.io/badge/Audit-SHA--256%20Chained-f59e0b.svg)](#tamper-evident-audit-ledger)
@@ -134,6 +137,21 @@ Drishti features an administrative SOC dashboard providing real-time visibility 
 - [STRIDE Threat Model & Security Whitepaper](docs/security_whitepaper.md)
 - [Resume Bullet Points & AppSec Interview Guide](docs/resume_bullet_points.md)
 - [System Architecture Specification](docs/architecture.md)
+
+---
+
+## 🗺️ Active Development & Security Roadmap
+
+Drishti follows an iterative security engineering lifecycle:
+
+- [x] **Phase 1: Database Root-of-Trust** — 21-table Neon PostgreSQL schema, server-authoritative balance procedures (`add_credits_secure`), underflow guards.
+- [x] **Phase 2: Cryptographic Engine** — Browser-native NIST P-256 ECDH + AES-256-GCM zero-knowledge messaging, IndexedDB private key vault, out-of-band SHA-256 fingerprints.
+- [x] **Phase 3: Backend Hardening** — Bcrypt (12 rounds), signed JWTs, RFC 6238 TOTP 2FA, AES-256-GCM envelope encryption at rest, single-use hashed recovery code burn.
+- [x] **Phase 4: SOC & Telemetry UI** — Real-time SIEM audit stream, 1-click `verify_audit_log_integrity()` verification, Cyber Command Palette (`Ctrl+K`).
+- [x] **Phase 5: Threat Modeling & Verification** — STRIDE threat analysis, automated 5-phase test runner (`verify_all_phases.js`).
+- [ ] **Phase 6 (In Progress): Decentralized Media Delivery** — Cloudflare R2 / AWS S3 presigned upload URLs with client-side chunking and zero-trust bucket policies.
+- [ ] **Phase 7 (Upcoming): FIDO2 / WebAuthn Hardware Tokens** — YubiKey and platform biometric authenticator support (Passkeys).
+- [ ] **Phase 8 (Upcoming): Automated Security CI/CD** — GitHub Actions pipeline running `verify_all_phases.js` and automated Semgrep / OWASP ZAP scans on PRs.
 
 ---
 

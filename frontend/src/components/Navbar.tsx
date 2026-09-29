@@ -43,7 +43,13 @@ export const Navbar = () => {
         
         {/* Logo Section */}
         <Link to="/" className="p-8 pb-8 flex flex-col items-start group">
-          <DrishtiLogo showText scale={1} className="pl-1" />
+          <div className="flex items-center gap-2.5">
+            <DrishtiLogo showText scale={1} className="pl-1" />
+            <span className="px-2 py-0.5 rounded-full text-[9px] font-mono font-bold tracking-wider uppercase bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1 shadow-sm shadow-amber-500/10">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+              BETA
+            </span>
+          </div>
           <div className="w-full h-px bg-white/[0.03] mt-8" />
         </Link>
 
@@ -113,6 +119,10 @@ export const Navbar = () => {
           <Link to="/" className="flex items-center gap-2">
             <DrishtiLogo scale={0.8} />
             <span className="text-xl font-syne font-bold text-textPrimary tracking-tight">Drishti</span>
+            <span className="px-1.5 py-0.5 rounded-full text-[8px] font-mono font-bold uppercase bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1">
+              <span className="w-1 h-1 rounded-full bg-amber-400 animate-pulse" />
+              BETA
+            </span>
           </Link>
           <div className="flex items-center gap-2">
             <CreditsBadge />
